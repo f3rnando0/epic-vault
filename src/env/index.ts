@@ -6,6 +6,8 @@ config();
 const schema = z.object({
   TOKEN: z.string(),
   GUILD_ID: z.string(),
+  EPIC_CLIENT_ID: z.string(),
+  EPIC_CLIENT_SECRET: z.string(),
 });
 
 const _env = schema.safeParse(process.env);
